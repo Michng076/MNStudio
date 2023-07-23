@@ -5,7 +5,20 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#0F3A40',
+        secondary: '#CFB760',
+        secondary_hover: '#F4EED9',
+      },
+      fontFamily: {
+        sans: ["Inter"],
+        mono: ["Source Code Pro"],
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms")({ strategy: "base" }),
+  ],
+};
