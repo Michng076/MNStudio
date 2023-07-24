@@ -7,9 +7,9 @@ export const Page: React.FC<PropsWithChildren<{
     includeFooter?: boolean;
 }>> = ({ children, includeFooter, includeHeader }) => {
     return (
-      <main className="font-sans prose">
+      <main className="font-sans prose min-h-screen flex flex-col">
         {includeHeader && <Header />}
-        <div className="w-screen">
+        <div className="w-screen flex-1">
           <div className="container mx-auto">
             {children}
           </div>

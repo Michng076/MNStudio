@@ -23,7 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </Section>
-      <Section title="Who is Michael Ngyuen?">
+      <Section title="Who is Michael Nguyen?">
         <Tabs titles={["Pianist", "Singer", "Teacher"]}>
           {(activeTab) => {
             return (
